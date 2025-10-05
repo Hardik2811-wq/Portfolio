@@ -1,0 +1,369 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F0EBD8;
+  color: #0D1321;
+  line-height: 1.6;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background: #0D1321;
+  color: #F0EBD8;
+  backdrop-filter: blur(6px); 
+  z-index: 100;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 5%;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #F0EBD8;
+}
+.logo span {
+  opacity: 0.9;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #F0EBD8;
+  opacity: 0.85;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.nav-links a:hover {
+  opacity: 1;
+  border-bottom: 2px solid #F0EBD8;
+}
+
+#hardik {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+  background: #F0EBD8;
+  color: #0D1321;
+}
+
+.hardik-content {
+  max-width: 50%;
+  text-align: left;
+}
+
+.hardik-content .pre-title {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #1D2D44;
+  margin-bottom: 0.5rem;
+}
+
+.hardik-content h1 {
+  font-size: 5rem;
+  margin-bottom: 1.2rem;
+  color: #0D1321;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.hardik-content h1 .dot {
+  color: #1D2D44;
+}
+
+.hardik-content .role-tagline {
+  max-width: 500px;
+  margin: 0 0 2rem 0;
+  color: #1D2D44;
+  opacity: 0.9;
+  font-size: 1.1rem;
+}
+
+.hardik-socials {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.hardik-socials a {
+  color: #0D1321;
+  font-size: 1.8rem;
+  transition: 0.3s ease;
+}
+
+.hardik-socials a:hover {
+  color: #1D2D44;
+  transform: translateY(-3px) scale(1.05);
+}
+
+.hardik-profile-pic {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid #0D1321;
+  box-shadow: 0 10px 25px rgba(13, 19, 33, 0.3);
+  min-width: 250px;
+  animation: fadeInZoom 1s ease-out;
+}
+
+.hardik-profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@keyframes fadeInZoom {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  background-color: transparent;
+  color: #0D1321;
+  border: 1px solid #0D1321;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  background-color: #0D1321;
+  color: #F0EBD8;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(13, 19, 33, 0.2);
+}
+
+section {
+  padding: 6rem 10%;
+  text-align: center;
+  background-color: #F0EBD8;
+  border-top: 1px solid rgba(13, 19, 33, 0.1);
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #0D1321;
+}
+
+#about p {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #1D2D44;
+  opacity: 0.9;
+}
+
+.skill i {
+  margin-right: 8px; 
+  font-size: 1.2rem; 
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1.2rem;
+  margin-top: 2.5rem;
+}
+.skill {
+  background: #F0EBD8;
+  border: 1px solid #0D1321;
+  padding: 1rem;
+  border-radius: 12px;
+  color: #0D1321;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.skill:hover {
+  background: #0D1321;
+  color: #F0EBD8;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 10px rgba(13, 19, 33, 0.1);
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.project-card {
+  background: #F0EBD8;
+  border: 1px solid #0D1321;
+  padding: 1.5rem;
+  border-radius: 10px;
+  color: #0D1321;
+  transition: all 0.3s ease;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(13, 19, 33, 0.05);
+}
+
+.project-card:hover {
+  background: #0D1321;
+  color: #F0EBD8;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(13, 19, 33, 0.2);
+}
+
+
+.project-card:hover .btn {
+  background-color: #F0EBD8;
+  color: #0D1321;
+  border-color: #F0EBD8;
+}
+
+.project-card:hover .btn-secondary {
+  color: #F0EBD8;
+  border-color: #F0EBD8;
+  background: transparent;
+}
+
+.project-card:hover .btn:hover {
+  transform: translateY(-3px);
+  background-color: #e0e0e0;
+}
+
+.project-card:hover .btn-secondary:hover {
+  background-color: rgba(240, 235, 216, 0.1); 
+  transform: translateY(-3px);
+}
+.project-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.project-links .btn-secondary {
+  color: #0D1321;
+  border-color: #1D2D44;
+  background: transparent;
+}
+.project-links .btn-secondary:hover {
+  background-color: #1D2D44;
+  color: #F0EBD8;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.contact-links a i {
+  margin-right: 6px;
+  font-size: 1.1rem;
+}
+
+.contact-links a {
+  color: #0D1321;
+  opacity: 0.9;
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+.contact-links a:hover {
+  opacity: 1;
+  border-bottom: 1px solid #0D1321;
+}
+
+footer {
+  background: #0D1321;
+  text-align: center;
+  padding: 1.2rem 0;
+  font-size: 0.9rem;
+  color: #F0EBD8;
+  opacity: 0.9;
+  border-top: 1px solid rgba(240, 235, 216, 0.1);
+  margin-top: 3rem;
+}
+
+@media (max-width: 900px) {
+  #hardik {
+    flex-direction: column;
+    height: auto;
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+  }
+
+  .hardik-profile-pic {
+    margin-bottom: 2rem;
+    width: 200px;
+    height: 200px;
+  }
+  
+  .hardik-content {
+    text-align: center;
+  }
+
+  .hardik-content p {
+    margin: 0 auto 1.5rem auto;
+  }
+
+  .hardik-content h1 {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    gap: 1rem;
+  }
+  .hardik-content h1 {
+    font-size: 2.2rem;
+  }
+  section {
+    padding: 4rem 6%;
+  }
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+}
